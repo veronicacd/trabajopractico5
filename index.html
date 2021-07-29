@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="procesa.php" method="POST">
+
+            <fieldset>
+            <legend>Tus Datos</legend>
+            <label>Nombre:<br>
+            <input type="text" name="nombre" maxlength="30"></label><br>
+            <label>Email:<br>
+            <input type="email" name="email" maxlength="30"></label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Tu Opinión</legend>
+            <p>¿Cómo te enteraste de Nosotros?</p>
+            <select name="opciones">
+                <option value="google">Google</option>
+                <option value="recomendacion">Recomendación</option>
+                <option value="redes">Redes sociales</option>
+
+            </select>
+            
+
+
+            <p>¿Nos visitaría nuevamente?</p>
+            <br>
+            <input type="radio" name="genero" value="si"> Sí
+            <input type="radio" name="genero" value="no"> No 
+            <input type="radio" name="genero" value="quizas"> Quizás
+
+            <p>Comentarios:</p>
+            <textarea name="comentarios"></textarea>
+            <br>
+            <br>
+            <br>
+
+            <input type="checkbox" name="genero" value="Marcar" > Marcar para recibir actualizaciones por email
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar opción">
+
+
+            </fieldset>
+
+
+
+        </form>
+    
+    </body>
+</html>
